@@ -4,11 +4,13 @@ LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda
 
 # TODO: Set this  with the path to your assignments rep.  Use ssh protocol and see lecture notes
 # about how to setup ssh-agent for passwordless access
-SRC_URI = "git://git@github.com/cu-ecen-aeld/assignments-3-and-later-KapureCUB.git;protocol=ssh;branch=master"
+SRC_URI = "git://git@github.com/cu-ecen-aeld/assignments-3-and-later-KapureCUB;protocol=ssh;branch=main"
+
+#git@github.com:cu-ecen-aeld/assignments-3-and-later-KapureCUB.git
 
 PV = "1.0+git${SRCPV}"
 # TODO: set to reference a specific commit hash in your assignment repo
-SRCREV = "5ad8277a5498bc7c88ae095fa64f20bf044c6317"
+SRCREV = "2fbd8914cb3e9d6d7b0f74d2b14d9b549e435650"
 
 inherit update-rc.d
 INITSCRIPT_PACKAGES = "${PN}"
